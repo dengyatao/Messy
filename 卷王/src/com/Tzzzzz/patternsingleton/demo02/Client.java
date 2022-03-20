@@ -6,6 +6,8 @@ public class Client {
         Singleton instance = Singleton.getInstance();
         Singleton instance1 = Singleton.getInstance();
         //2.判断创建的两个对象是否为同一个对象
+
+
         System.out.println(instance == instance1);;
     }
 }
