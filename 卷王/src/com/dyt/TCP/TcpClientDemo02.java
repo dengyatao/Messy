@@ -8,7 +8,7 @@ public class TcpClientDemo02 {
     public static void main(String[] args) throws Exception{
         //1.创建一个Socket连接
         Socket socket = new Socket(InetAddress.getByName("127.0.0.1"), 9000);
-        //2.船舰一个输出流
+        //2.创建一个输出流
         OutputStream os = socket.getOutputStream();
         //3.读取文件
         FileInputStream fis = new FileInputStream(new File("头像.jpg"));
