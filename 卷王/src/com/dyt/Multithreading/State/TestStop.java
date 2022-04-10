@@ -1,4 +1,4 @@
-package com.dyt.Multithreading.Stop;
+package com.dyt.Multithreading.State;
 
 //测试Stop
 //1.建议线程正常停止--->利用次数，不建议死循环
