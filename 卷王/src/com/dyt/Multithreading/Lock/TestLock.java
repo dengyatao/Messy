@@ -2,6 +2,7 @@ package com.dyt.Multithreading.Lock;
 
 //测试Lock锁
 
+import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class TestLock {
@@ -15,10 +16,10 @@ public class TestLock {
 }
 
 class TestLock2 implements Runnable{
-    int ticketnums = 10;
+    int ticketNums = 10;
 
     //定义Lock锁
-    private final ReentrantLock lock = new ReentrantLock();
+    private final Lock lock = new ReentrantLock();
 
     @Override
     public void run() {
@@ -30,8 +31,8 @@ class TestLock2 implements Runnable{
                     e.printStackTrace();
                 }
                 lock.lock();//加锁
-                if (ticketnums > 0){
-                    System.out.println(ticketnums--);
+                if (ticketNums > 0){
+                    System.out.println(ticketNums--);
                 }else{
                     break;
                 }
